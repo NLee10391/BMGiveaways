@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="#F8F7F5">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:scrollbars="none">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                app:title=" | BlackMarket Giveaway"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+                android:background="@color/white"
+                app:logo="@drawable/ic_baseline_storefront_24"
+                app:titleTextColor="#000000"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <Button
+                    android:id="@+id/listview_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="24dp"
+                    android:background="@color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:drawableRight="@drawable/ic_baseline_list_24"
+                    android:layout_marginLeft="125dp"
+                    ></Button>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            android:scrollbars="none" />
+
+        </LinearLayout>
+
+        //dummyview
+        //linebreak
+        //linebreak
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="#c8c8c8c8" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_height="1dp"
+            android:layout_marginTop="12.5dp"
+            android:background="#c8c8c8c8" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_height="1dp"
+            android:layout_marginTop="12.5dp"
+            android:background="#c8c8c8c8" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_height="1dp"
+            android:layout_marginTop="12.5dp"
+            android:background="#c8c8c8c8" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_height="1dp"
+            android:layout_marginTop="12.5dp"
+            android:background="#c8c8c8c8" />
+\\CommonGiveawaysStarthorizontalview
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="0dp"
+            android:paddingLeft="0dp"
+            android:scrollbars="none">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:paddingLeft="0dp">
+
+
+//common_item_1
+            <TextView
+                android:layout_width="201dp"
+                android:layout_height="match_parent"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:paddingLeft="0dp"
+                android:paddingTop="25dp"
+                android:layout_margin="50dp"
+                android:textAlignment="center"
+                android:text="MagneGlass Phone Case"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:elevation="6dp">
+            </TextView>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:elevation="6dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:src="@drawable/magnecasephone2"></ImageView>
+
+        <Button
+            android:id="@+id/Enterbtn_Common"
+            android:layout_width="225dp"
+            android:layout_height="55dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_bg_common"
+            android:elevation="6dp"
+            android:text="Enter Giveaway" />
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="24dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/custom_banner_grey"
+                    android:elevation="1.5dp"/>
+
+        <TextView
+            android:id="@+id/myview"
+            android:layout_width="325dp"
+            android:layout_height="475dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rect_panel"
+            android:elevation="1dp" />
+
+
+//common_item_2 steamgiftcard5$
+
+        <TextView
+            android:layout_width="201dp"
+            android:layout_height="match_parent"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="top|center_horizontal"
+            android:paddingTop="25dp"
+            android:layout_margin="50dp"
+            android:textAlignment="center"
+            android:text="$5 Steam Gift Card"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:elevation="6dp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:elevation="6dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:src="@drawable/giftcard_steam_5"></ImageView>
+
+        <Button
+            android:id="@+id/Enterbtn_Common2"
+            android:layout_width="225dp"
+            android:layout_height="55dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_bg_common"
+            android:elevation="6dp"
+            android:text="Enter Giveaway" />
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="24dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/custom_banner_grey"
+                    android:elevation="1.5dp"/>
+
+                <TextView
+            android:id="@+id/myview6"
+            android:layout_width="325dp"
+            android:layout_height="475dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rect_panel"
+            android:elevation="1dp" />
+
+   //common_item_3
+
+                <TextView
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_gravity="top|center_horizontal"
+                    android:paddingTop="25dp"
+                    android:layout_margin="50dp"
+                    android:textAlignment="center"
+                    android:text="$5 Amazon Gift Card"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:elevation="6dp">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:elevation="6dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:src="@drawable/giftcard_amazon_5"></ImageView>
+
+                <Button
+                    android:id="@+id/Enterbtn_Common3"
+                    android:layout_width="225dp"
+                    android:layout_height="55dp"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_bg_common"
+                    android:elevation="6dp"
+                    android:text="Enter Giveaway" />
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="24dp"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/custom_banner_grey"
+                    android:elevation="1.5dp"/>
+
+                <TextView
+                    android:id="@+id/myview10"
+                    android:layout_width="325dp"
+                    android:layout_height="475dp"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/rect_panel"
+                    android:elevation="1dp" />
+
+
+
+            </GridLayout>
+        </HorizontalScrollView>
+
+//rare_scroll_view
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="0dp"
+            android:scrollbars="none"
+            >
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:paddingLeft="0dp">
+//raregiveawaystart
+
+            <TextView
+                android:layout_row="2"
+                android:layout_column="0"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="225dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/textbox_shape"
+                android:elevation="6dp"/>
+
+        <TextView
+            android:layout_width="201dp"
+            android:layout_height="match_parent"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:paddingLeft="0dp"
+            android:paddingTop="25dp"
+            android:layout_margin="50dp"
+            android:text="SWIM Tee Shirt"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:elevation="6dp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:paddingBottom="50dp"
+            android:layout_margin="110dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="end|right|center"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:src="@drawable/swimtee_front"
+            android:elevation="6dp">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:paddingBottom="50dp"
+            android:layout_margin="110dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="start|left|center"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:src="@drawable/swimtee_back"
+            android:elevation="6dp">
+        </ImageView>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="24dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@drawable/custom_banner_blue"
+                android:elevation="1.5dp"/>
+
+        <Button
+            android:id="@+id/Enterbtn_Rare"
+            android:layout_width="225dp"
+            android:layout_height="55dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_bg_rare"
+            android:text="Enter Giveaway"
+            android:elevation="6dp"/>
+
+            <TextView
+                android:id="@+id/myview2"
+                android:layout_width="325dp"
+                android:layout_height="475dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rect_panel"
+                android:elevation="1dp" />
+//rare_item_2
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:background="#ffffff"
+                app:tint="#1c92d2"
+                android:elevation="6dp" >
+            </ImageView>
+
+            <TextView
+                android:layout_row="2"
+                android:layout_column="1"
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/textbox_shape"
+                android:elevation="6dp"/>
+
+            <TextView
+                android:layout_width="201dp"
+                android:layout_height="match_parent"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:layout_margin="50dp"
+                android:text="$10 Steam Gift Card"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:elevation="6dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:elevation="6dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:src="@drawable/giftcard_steam_10"></ImageView>
+
+            <Button
+                android:id="@+id/Enterbtn_Rare2"
+                android:layout_width="225dp"
+                android:layout_height="55dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_bg_rare"
+                android:text="Enter Giveaway"
+                android:elevation="6dp"/>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="24dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@drawable/custom_banner_blue"
+                android:elevation="1.5dp"/>
+
+            <TextView
+                android:id="@+id/myview7"
+                android:layout_width="325dp"
+                android:layout_height="475dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rect_panel"
+                android:elevation="1dp"
+                />
+
+\\RARE_ITEM_3
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:background="#ffffff"
+                app:tint="#1c92d2"
+                android:elevation="6dp" >
+            </ImageView>
+
+            <TextView
+                android:layout_row="2"
+                android:layout_column="2"
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/textbox_shape"
+                android:elevation="6dp"/>
+
+            <TextView
+                android:layout_width="201dp"
+                android:layout_height="match_parent"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:layout_margin="50dp"
+                android:text="$10 Amazon Gift Card"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:elevation="6dp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:elevation="6dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:src="@drawable/giftcard_amazon_10"></ImageView>
+
+            <Button
+                android:id="@+id/Enterbtn_Rare3"
+                android:layout_width="225dp"
+                android:layout_height="55dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_bg_rare"
+                android:text="Enter Giveaway"
+                android:elevation="6dp"/>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="24dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@drawable/custom_banner_blue"
+                android:elevation="1.5dp"/>
+
+            <TextView
+                android:id="@+id/myview11"
+                android:layout_width="325dp"
+                android:layout_height="475dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rect_panel"
+                android:elevation="1dp" />
+        </GridLayout>
+        </HorizontalScrollView>
+
+\\UltraRare HorizontalScrollView
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="0dp"
+            android:scrollbars="none"
+            >
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:paddingLeft="0dp"
+            android:layout_marginTop="25dp">
+
+ULTRARARE_ITEM_1
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                app:tint="@drawable/custom_bg_ultrarare"
+                android:background="#ffffff"
+                android:elevation="6dp">
+            </ImageView>
+
+            <TextView
+                android:layout_row="3"
+                android:layout_column="0"
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/textbox_shape"
+                android:elevation="6dp"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:paddingTop="30dp"
+                android:layout_gravity="center"
+                android:paddingBottom="50dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:src="@drawable/giftcard_steam_20"
+                android:elevation="6dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="201dp"
+                android:layout_height="match_parent"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_gravity="top|center"
+                android:paddingTop="0dp"
+                android:layout_margin="50dp"
+                android:textAlignment="center"
+                android:text="$20 Steam Gift Card"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:elevation="6dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/Enterbtn_Ultrarare2"
+                android:layout_width="225dp"
+                android:layout_height="55dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_bg_ultrarare"
+                android:text="Enter Giveaway"
+                android:elevation="6dp"/>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="24dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@drawable/custom_banner_purple"
+                android:elevation="1.5dp"/>
+
+            <TextView
+                android:id="@+id/myview5"
+                android:layout_width="325dp"
+                android:layout_height="475dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rect_panel"
+                android:elevation="1dp" />
+
+\\ULTRARARE_ITEM_2
+            <TextView
+                android:layout_row="3"
+                android:layout_column="2"
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/textbox_shape"
+                android:elevation="6dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:src="@drawable/giftcard_steam_50"
+                android:elevation="6dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="201dp"
+                android:layout_height="match_parent"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:layout_gravity="center|top"
+                android:layout_margin="50dp"
+                android:layout_centerHorizontal="true"
+                android:text="$50 Steam Gift Card"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:elevation="6dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/Enterbtn_Legendary2"
+                android:layout_width="225dp"
+                android:layout_height="55dp"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_bg_ultrarare"
+                android:text="Enter Giveaway"
+                android:elevation="6dp"/>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="24dp"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@drawable/custom_banner_purple"
+                android:elevation="1.5dp"/>
+
+            <TextView
+                android:id="@+id/myview8"
+                android:layout_width="325dp"
+                android:layout_height="475dp"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rect_panel"
+                android:elevation="1dp" />
+
+
+ULTRARARE_ITEM_3
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                app:tint="@drawable/custom_bg_ultrarare"
+                android:background="#ffffff"
+                android:elevation="6dp">
+            </ImageView>
+
+            <TextView
+                android:layout_row="3"
+                android:layout_column="1"
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/textbox_shape"
+                android:elevation="6dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:paddingTop="30dp"
+                android:layout_gravity="center"
+                android:paddingBottom="50dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:src="@drawable/giftcard_amazon_20"
+                android:elevation="6dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="201dp"
+                android:layout_height="match_parent"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_gravity="top|center"
+                android:paddingTop="0dp"
+                android:layout_margin="50dp"
+                android:textAlignment="center"
+                android:text="$20 Amazon Gift Card"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:elevation="6dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/Enterbtn_Ultrarare3"
+                android:layout_width="225dp"
+                android:layout_height="55dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_bg_ultrarare"
+                android:text="Enter Giveaway"
+                android:elevation="6dp"/>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="24dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@drawable/custom_banner_purple"
+                android:elevation="1.5dp"/>
+
+            <TextView
+                android:id="@+id/myview14"
+                android:layout_width="325dp"
+                android:layout_height="475dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rect_panel"
+                android:elevation="1dp" />
+\\ULTRARARE_ITEM_4
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                app:tint="@drawable/custom_bg_ultrarare"
+                android:background="#ffffff"
+                android:elevation="6dp">
+            </ImageView>
+
+            <TextView
+                android:layout_row="3"
+                android:layout_column="3"
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/textbox_shape"
+                android:elevation="6dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:paddingTop="30dp"
+                android:layout_gravity="center"
+                android:paddingBottom="50dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:src="@drawable/giftcard_amazon_50"
+                android:elevation="6dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="201dp"
+                android:layout_height="match_parent"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:layout_gravity="top|center"
+                android:paddingTop="0dp"
+                android:layout_margin="50dp"
+                android:textAlignment="center"
+                android:text="$50 Amazon Gift Card"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:elevation="6dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/Enterbtn_Ultrarare4"
+                android:layout_width="225dp"
+                android:layout_height="55dp"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_bg_ultrarare"
+                android:text="Enter Giveaway"
+                android:elevation="6dp"/>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="24dp"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@drawable/custom_banner_purple"
+                android:elevation="1.5dp"/>
+
+            <TextView
+                android:id="@+id/myview15"
+                android:layout_width="325dp"
+                android:layout_height="475dp"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rect_panel"
+                android:elevation="1dp" />
+
+            </GridLayout>
+
+        </HorizontalScrollView>
+
+//Legendary_horizontalview
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_margin="0dp"
+            android:scrollbars="none">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:paddingLeft="0dp"
+            android:layout_marginTop="25dp">
+
+\\Legendary_item_1
+            <TextView
+                android:layout_row="4"
+                android:layout_column="0"
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/textbox_shape"
+                android:elevation="6dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingBottom="10dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:src="@drawable/xboxseriesx"
+                android:elevation="6dp">
+            </ImageView>
+
+        <TextView
+            android:layout_width="201dp"
+            android:layout_height="match_parent"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_margin="50dp"
+            android:textAlignment="center"
+            android:layout_gravity="center|top"
+            android:text="Xbox One Series X"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:elevation="6dp">
+        </TextView>
+
+        <Button
+            android:id="@+id/Enterbtn_Legendary"
+            android:layout_width="225dp"
+            android:layout_height="55dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_bg_legendary"
+            android:text="Enter Giveaway"
+            android:elevation="6dp"
+            android:clickable="false"/>
+            -banner/rarity
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="24dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@drawable/custom_banner_yellow"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:text="Legendary Rarity"
+                android:textSize="8dp"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_gravity="bottom|right"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="6dp"
+                android:elevation="2.5dp"/>
+            
+            /background foil
+            <TextView
+                android:id="@+id/myview16"
+                android:layout_width="325dp"
+                android:layout_height="475dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/gold_foil_banner"
+                android:elevation="1.5dp" />
+
+
+        <TextView
+            android:id="@+id/myview4"
+            android:layout_width="325dp"
+            android:layout_height="475dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rect_panel"
+            android:elevation="1dp" />
+
+  \\legendary_item_2
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                app:tint="@drawable/custom_bg_legendary"
+                android:background="#ffffff"
+                android:elevation="6dp">
+            </ImageView>
+
+            <TextView
+                android:layout_row="4"
+                android:layout_column="1"
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/textbox_shape"
+                android:elevation="6dp"/>
+
+            <ImageView
+                android:layout_width="185dp"
+                android:layout_height="200dp"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:paddingTop="30dp"
+                android:layout_gravity="center"
+                android:paddingBottom="50dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:src="@drawable/bose_colorlinkspeakers"
+                android:elevation="6dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="201dp"
+                android:layout_height="match_parent"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_gravity="top|center"
+                android:paddingTop="0dp"
+                android:layout_margin="50dp"
+                android:textAlignment="center"
+                android:text="Bose Colorlink Speaker"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:elevation="6dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/Enterbtn_Legendary3"
+                android:layout_width="225dp"
+                android:layout_height="55dp"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_bg_legendary"
+                android:text="Enter Giveaway"
+                android:elevation="6dp"/>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="24dp"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="1dp"
+                android:background="@drawable/custom_banner_yellow"
+                android:elevation="1.5dp"/>
+
+            <TextView
+                android:id="@+id/myview3"
+                android:layout_width="325dp"
+                android:layout_height="475dp"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rect_panel"
+                android:elevation="1dp" />
+
+            //unavailable
+            <TextView
+                android:id="@+id/myview9"
+                android:layout_width="325dp"
+                android:layout_height="475dp"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rect_panel_grey"
+                android:elevation="8dp" />
+
+
+            <TextView
+                android:layout_row="4"
+                android:layout_column="1"
+                android:text="UNAVAILABLE\nCOMING SOON"
+                android:textColor="#DE3163"
+                android:textStyle="bold"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:elevation="9dp"
+                android:rotation="25"
+                ></TextView>
+
+        </GridLayout>
+
+        </HorizontalScrollView>
+
+//dummyview
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="200dp"
+        android:gravity="center_horizontal|bottom"
+        android:paddingTop="50dp" />
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_gravity="center|top"
+            android:textAlignment="center"
+            android:elevation="6dp"
+            android:layout_marginTop="75dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:background="@drawable/ic_baseline_storefront_24"></TextView>
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_gravity="center|top"
+            android:textAlignment="center"
+            android:layout_marginLeft="50dp"
+            android:elevation="6dp"
+            android:layout_marginTop="48dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+            </TextView>
+
+
+
+    </GridLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+

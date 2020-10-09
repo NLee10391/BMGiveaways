@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="true">
+        <item>@font/advent_pro_thin</item>
+        <item>@font/amethysta</item>
+        <item>@font/anonymous_pro</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/cherry_cream_soda</item>
+
+    </array>
+</resources>
